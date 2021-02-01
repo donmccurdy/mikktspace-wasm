@@ -1,0 +1,29 @@
+{
+  "name": "mikktspace",
+  "version": "0.0.1",
+  "description": "MikkTSpace vertex tangent calculation, in Web Assembly",
+  "main": "pkg/mikktspace.js",
+  "scripts": {
+    "dist:web": "wasm-pack build --out-dir pkg/bundler",
+    "dist:node": "wasm-pack build --target nodejs --out-dir pkg/node",
+    "dist:debug": "wasm-pack build --target nodejs --out-dir pkg/node --dev",
+    "test": "tape test/test.js | tap-spec"
+  },
+  "keywords": [
+    "mikktspace",
+    "tangents",
+    "tangent-space",
+    "three.js",
+    "threejs",
+    "webgl",
+    "webgpu"
+  ],
+  "author": "Don McCurdy <dm@donmccurdy.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@gltf-transform/core": "^0.9.0",
+    "@gltf-transform/lib": "^0.9.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.1.1"
+  }
+}

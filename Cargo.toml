@@ -1,0 +1,20 @@
+[package]
+name = "mikktspace"
+version = "0.0.1"
+authors = ["Don McCurdy <dm@donmccurdy.com>"]
+description = "MikkTSpace vertex tangent calculation, in Web Assembly."
+license = "MIT"
+repository = "https://github.com/donmccurdy/mikktspace-js"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+nalgebra = "0.19.0"
+# console_error_panic_hook = "0.1"
+
+[profile.release]
+opt-level = 's'
+# debug = true
