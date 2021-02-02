@@ -14,7 +14,7 @@ use std::panic;
  /// Generates vertex tangents for the given position/normal/texcoord attributes.
 #[wasm_bindgen]
 #[allow(non_snake_case)]
-pub fn computeVertexTangents(position: Vec<f32>, normal: Vec<f32>, texcoord: Vec<f32>) -> Vec<f32> {
+pub fn generateTangents(position: Vec<f32>, normal: Vec<f32>, texcoord: Vec<f32>) -> Vec<f32> {
     #[cfg(debug_assertions)]
     panic::set_hook(Box::new(console_error_panic_hook::hook));
 

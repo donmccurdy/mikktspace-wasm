@@ -4,12 +4,12 @@ const path = require('path');
 const { NodeIO } = require('@gltf-transform/core');
 const { unweld } = require('@gltf-transform/lib');
 
-tape('test', async (t) => {
+tape('generate tangents', async (t) => {
     const io = new NodeIO();
     const doc = await io.read(path.resolve(__dirname, './cube.glb')).transform(unweld());
     const cube = doc.getRoot().listMeshes()[0].listPrimitives()[0];
 
-    const tangentArray = mikktspace.computeVertexTangents(
+    const tangentArray = mikktspace.generateTangents(
         cube.getAttribute('POSITION').getArray(),
         cube.getAttribute('NORMAL').getArray(),
         cube.getAttribute('TEXCOORD_0').getArray(),
@@ -21,8 +21,11 @@ tape('test', async (t) => {
     let invalid = [];
     for (let i = 0; i < tangentArray.length; i++) {
         // TODO(cleanup): Should |a| === |b| be required?
-        if (Math.abs(tangentArray[i]) !== Math.abs(TANGENTS_EXPECTED[i])) {
-            bad.push({actual: tangentArray[i], expected: TANGENTS_EXPECTED[i], index: i});
+        const isEqual = (i + 1) % 4
+            ? tangentArray[i] === TANGENTS_EXPECTED[i]
+            : Math.abs(tangentArray[i]) === Math.abs(TANGENTS_EXPECTED[i]);
+        if (!isEqual) {
+            invalid.push({actual: tangentArray[i], expected: TANGENTS_EXPECTED[i], index: i});
         }
     }
 
