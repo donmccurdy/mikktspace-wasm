@@ -27,7 +27,6 @@ pub fn computeVertexTangents(position: Vec<f32>, normal: Vec<f32>, texcoord: Vec
  * MikkTSpace library interface.
  */
 
-#[wasm_bindgen]
 pub struct Mesh {
     position: Vec<f32>,
     normal: Vec<f32>,
