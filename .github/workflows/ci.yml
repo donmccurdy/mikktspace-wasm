@@ -12,6 +12,8 @@ jobs:
     # Setup.
     - uses: actions/checkout@v2
     - uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
     - uses: jetli/wasm-pack-action@v0.3.0
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
