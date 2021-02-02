@@ -6,7 +6,7 @@
 
 [MikkTSpace](http://www.mikktspace.com/) vertex tangent calculation, in Web Assembly.
 
-> **Work in progress.** This code is functional, but not yet thoroughly tested.
+> **Experimental.** This code is functional, but not yet thoroughly tested.
 
 ## Quickstart
 
@@ -25,7 +25,7 @@ import { generateTangents } from 'mikktspace';
 const tangents = generateTangents(positions, normals, uvs); // → Float32Array
 ```
 
-Node.js does not yet support ES Modules with WebAssembly particularly well, so the `mikktspace`
+Node.js does not yet support ES Modules with WebAssembly particularly well (as of Node.js v14), so the `mikktspace`
 package also provides a CommonJS entrypoint. The CommonJS entrypoint works only in Node.js.
 
 ```js
@@ -36,7 +36,7 @@ const tangents = generateTangents(positions, normals, uvs); // → Float32Array
 
 ## API
 
-### generateTangents
+### generateTangents()
 
 Generates vertex tangents for the given position/normal/texcoord attributes. Triangles of the
 input geometry must be unindexed/unwelded.
