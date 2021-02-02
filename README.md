@@ -36,7 +36,7 @@ const tangents = generateTangents(positions, normals, uvs); // → Float32Array
 
 ## API
 
-### generateTangents()
+### generateTangents
 
 Generates vertex tangents for the given position/normal/texcoord attributes. Triangles of the
 input geometry must be unindexed/unwelded.
