@@ -3,9 +3,15 @@ mod mikktspace;
 use wasm_bindgen::prelude::*;
 use nalgebra::{Vector2, Vector3};
 
-// extern crate console_error_panic_hook;
-// use std::panic;
+#[cfg(debug_assertions)]
+extern crate console_error_panic_hook;
 
+#[cfg(debug_assertions)]
+use std::panic;
+
+/******************************************************************************
+ * MikkTSpace interface.
+ */
 
 /// The interface by which mikktspace interacts with your geometry.
 pub trait Geometry {
@@ -76,7 +82,9 @@ fn face_vert_to_index(face: usize, vert: usize) -> usize {
     face << 2 | vert & 0x3
 }
 
-/************************************************************************/
+/******************************************************************************
+ * Bindings.
+ */
 
 #[wasm_bindgen]
 pub struct Mesh {
@@ -123,7 +131,6 @@ impl Geometry for Mesh {
         self.tangent.push(tangent[1]);
         self.tangent.push(tangent[2]);
         self.tangent.push(tangent[3]);
-        // console_log!("num_faces() -> {vx}", vx = tangent);
     }
 }
 
@@ -142,28 +149,27 @@ pub fn computeVertexTangents(position: Vec<f32>, normal: Vec<f32>, texcoord: Vec
     return mesh.tangent; // TODO(cleanup): Clearer success/failure signal?
 }
 
-///////////// DEBUG
+/******************************************************************************
+ * Debug.
+ */
 
-// fn vertex(mesh: &Mesh, face: usize, vert: usize) -> &Vertex {
-//     let vs: &[u32; 3] = &mesh.faces[face];
-//     &mesh.vertices[vs[vert] as usize]
-// }
+#[cfg(debug_assertions)]
+#[wasm_bindgen]
+extern "C" {
+    // Use `js_namespace` here to bind `console.log(..)` instead of just
+    // `log(..)`
+    #[wasm_bindgen(js_namespace = console)]
+    fn log(s: &str);
+}
 
-// #[wasm_bindgen]
-// extern "C" {
-//     // Use `js_namespace` here to bind `console.log(..)` instead of just
-//     // `log(..)`
-//     #[wasm_bindgen(js_namespace = console)]
-//     fn log(s: &str);
-// }
+#[cfg(debug_assertions)]
+#[allow(unused_macros)]
+macro_rules! console_log {
+    ($($t:tt)*) => (log(&format_args!($($t)*).to_string()))
+}
 
-// macro_rules! console_log {
-//     // Note that this is using the `log` function imported above during
-//     // `bare_bones`
-//     ($($t:tt)*) => (log(&format_args!($($t)*).to_string()))
-// }
-
-// #[wasm_bindgen]
-// pub fn init_panic_hook() {
-//     console_error_panic_hook::set_once();
-// }
+#[cfg(debug_assertions)]
+#[wasm_bindgen]
+pub fn init_panic_hook() {
+    console_error_panic_hook::set_once();
+}

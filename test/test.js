@@ -3,7 +3,6 @@ const tape = require('tape');
 const path = require('path');
 const { NodeIO } = require('@gltf-transform/core');
 const { unweld } = require('@gltf-transform/lib');
-const { BADFAMILY } = require('dns');
 
 tape('test', async (t) => {
     const io = new NodeIO();
