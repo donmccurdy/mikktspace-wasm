@@ -115,8 +115,18 @@ name = "mikktspace"
 version = "0.0.1"
 dependencies = [
  "console_error_panic_hook",
+ "mikktspace 0.2.0",
  "nalgebra",
  "wasm-bindgen",
+]
+
+[[package]]
+name = "mikktspace"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e7525a5f1b5c369e17a4b17853a57ca05726575eee26529876d0fd8963a6e1d6"
+dependencies = [
+ "nalgebra",
 ]
 
 [[package]]
