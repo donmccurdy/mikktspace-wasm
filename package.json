@@ -1,6 +1,6 @@
 {
   "name": "mikktspace",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "MikkTSpace vertex tangent calculation, in Web Assembly",
   "author": "Don McCurdy <dm@donmccurdy.com>",
   "license": "MIT",
@@ -13,7 +13,9 @@
     "dist:main": "wasm-pack build --target nodejs --out-dir dist --out-name mikktspace_main --no-typescript",
     "dist:debug": "wasm-pack build --target nodejs --out-dir dist --out-name mikktspace.main --no-typescript --dev",
     "clean": "rm dist/*",
-    "test": "tape test/test.js | tap-spec"
+    "test": "tape test/test.js | tap-spec",
+    "preversion": "yarn dist && yarn test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "keywords": [
     "mikktspace",
