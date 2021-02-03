@@ -14,13 +14,16 @@ use std::panic;
  /// Generates vertex tangents for the given position/normal/texcoord attributes.
 #[wasm_bindgen]
 #[allow(non_snake_case)]
-pub fn generateTangents(position: Vec<f32>, normal: Vec<f32>, texcoord: Vec<f32>) -> Vec<f32> {
+pub fn generateTangents(position: Vec<f32>, normal: Vec<f32>, texcoord: Vec<f32>) -> Result<Vec<f32>, JsValue> {
     #[cfg(debug_assertions)]
     panic::set_hook(Box::new(console_error_panic_hook::hook));
 
     let mut mesh = Mesh { position, normal, texcoord, tangent: Vec::new() };
-    mikktspace::generate_tangents(&mut mesh);
-    return mesh.tangent; // TODO(cleanup): Clearer success/failure signal?
+    if mikktspace::generate_tangents(&mut mesh) {
+        Ok(mesh.tangent)
+    } else {
+        Err(JsValue::from_str("Failed to generate tangents."))
+    }
 }
 
 /******************************************************************************
