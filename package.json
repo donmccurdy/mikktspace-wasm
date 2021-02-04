@@ -9,9 +9,9 @@
   "sideEffects": false,
   "scripts": {
     "dist": "yarn dist:main && yarn dist:module && find dist -type f ! -name 'mikktspace*' -delete",
-    "dist:module": "wasm-pack build --target bundler --out-dir dist --out-name mikktspace_module --no-typescript",
-    "dist:main": "wasm-pack build --target nodejs --out-dir dist --out-name mikktspace_main --no-typescript",
-    "dist:debug": "wasm-pack build --target nodejs --out-dir dist --out-name mikktspace.main --no-typescript --dev",
+    "dist:module": "wasm-pack build --release --target bundler --out-dir dist --out-name mikktspace_module --no-typescript",
+    "dist:main": "wasm-pack build --release --target nodejs --out-dir dist --out-name mikktspace_main --no-typescript",
+    "dist:debug": "wasm-pack build --dev --target nodejs --out-dir dist --out-name mikktspace_main --no-typescript",
     "clean": "rm dist/*",
     "test": "tape test/test.js | tap-spec",
     "preversion": "yarn dist && yarn test",

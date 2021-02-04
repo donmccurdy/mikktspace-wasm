@@ -3,7 +3,6 @@ const tape = require('tape');
 const path = require('path');
 const { NodeIO } = require('@gltf-transform/core');
 const { unweld } = require('@gltf-transform/lib');
-const fs = require('fs');
 
 tape('generateTangents', async (t) => {
     const io = new NodeIO();
@@ -36,7 +35,7 @@ tape('generateTangents | error handling', (t) => {
     const uvs = new Float32Array([1, 1]);
     t.throws(() => mikktspace.generateTangents(positions, normals, uvs), /Failed/, 'error handling');
     t.end();
-})
+});
 
 const TANGENTS_EXPECTED = new Float32Array([
     0.40824824,0.81649655,0.40824824,1,
