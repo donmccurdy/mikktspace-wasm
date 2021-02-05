@@ -5,8 +5,6 @@
 
 [MikkTSpace](http://www.mikktspace.com/) vertex tangent calculation, in Web Assembly.
 
-> **Experimental.** This code is functional, but not yet thoroughly tested.
-
 ## Quickstart
 
 Installation:
