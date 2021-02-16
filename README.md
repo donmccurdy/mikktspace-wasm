@@ -1,7 +1,7 @@
-# mikktspace-js
+# mikktspace-wasm
 
 [![Latest NPM release](https://img.shields.io/npm/v/mikktspace.svg)](https://www.npmjs.com/package/mikktspace)
-[![Build Status](https://github.com/donmccurdy/mikktspace-js/workflows/build/badge.svg?branch=main&event=push)](https://github.com/donmccurdy/mikktspace-js/actions?query=workflow%3Abuild)
+[![Build Status](https://github.com/donmccurdy/mikktspace-wasm/workflows/build/badge.svg?branch=main&event=push)](https://github.com/donmccurdy/mikktspace-wasm/actions?query=workflow%3Abuild)
 
 [MikkTSpace](http://www.mikktspace.com/) vertex tangent calculation, in Web Assembly.
 

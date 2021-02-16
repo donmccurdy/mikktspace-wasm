@@ -4,7 +4,7 @@ version = "0.0.1"
 authors = ["Don McCurdy <dm@donmccurdy.com>"]
 description = "MikkTSpace vertex tangent calculation, in Web Assembly."
 license = "MIT"
-repository = "https://github.com/donmccurdy/mikktspace-js"
+repository = "https://github.com/donmccurdy/mikktspace-wasm"
 edition = "2018"
 
 [lib]
