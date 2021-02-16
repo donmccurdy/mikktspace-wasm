@@ -23,7 +23,7 @@ If you have an...
 |---------|-----------|
 | ![correct rendering](./assets/correct.png) | ![incorrect rendering](./assets/incorrect.png) |
 
-> Figure: [Flight Helmet](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/FlightHelmet) sample, shown with correct MikkTSpace vertex tangents (left) and incorrect tangents (right).
+> **Figure:** *[Flight Helmet](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/FlightHelmet) glTF 2.0 sample, shown with correct (left) and incorrect (right) vertex tangents.*
 
 ## Other considerations
 
