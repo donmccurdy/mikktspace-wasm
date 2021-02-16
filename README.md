@@ -6,7 +6,7 @@
 [MikkTSpace](http://www.mikktspace.com/) vertex tangent calculation, in Web Assembly.
 
 > A common misunderstanding about tangent space normal maps is that this representation is somehow asset independent. However, normals sampled/captured from a high resolution surface and then transformed into tangent space is more like an encoding. Thus to reverse the original captured field of normals the transformation used to decode would have to be the exact inverse of that which was used to encode.
-> 
+>
 > — Morten S. Mikkelsen
 
 When normal maps render incorrectly, with distortion or unexpectedly inverted insets and extrusions, this misconception may be the cause. Most normal map bakers use the MikkTSpace standard to generate vertex tangents while creating a normal map, and the technique is recommended by the glTF 2.0 specification. Engines reconstructing the tangent space at runtime often use other methods — e.g. derivatives in the pixel shader — for efficiency, when original tangents are not provided. This works well for _most_ assets, but may not work as well for others.
@@ -18,6 +18,12 @@ If you have an...
 - **Engine** that needs to support arbitrary assets perfectly (and can afford the per-vertex pre-processing)
 
 ...then MikkTSpace vertex tangents may resolve or prevent rendering issues with normal maps.
+
+| correct | incorrect |
+|---------|-----------|
+| ![correct rendering](./assets/correct.png) | ![incorrect rendering](./assets/incorrect.png) |
+
+> Figure: [Flight Helmet](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/FlightHelmet) sample, shown with correct MikkTSpace vertex tangents (left) and incorrect tangents (right).
 
 ## Other considerations
 
