@@ -1,6 +1,6 @@
 {
   "name": "mikktspace",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "MikkTSpace vertex tangent calculation, in Web Assembly",
   "author": "Don McCurdy <dm@donmccurdy.com>",
   "license": "MIT",
