@@ -1,6 +1,6 @@
 [package]
 name = "mikktspace"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Don McCurdy <dm@donmccurdy.com>"]
 description = "MikkTSpace vertex tangent calculation, in Web Assembly."
 license = "MIT"
@@ -14,7 +14,9 @@ crate-type = ["cdylib"]
 wasm-bindgen = "0.2"
 mikktspace = "0.2"
 nalgebra = "0.19.0"
-console_error_panic_hook = { version = "0.1", optional = true }
+wee_alloc = "0.4.5"
+# Debug only.
+console_error_panic_hook = { version = "0.1" }
 
 [profile.release]
 opt-level = 's'
