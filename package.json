@@ -4,6 +4,7 @@
   "description": "MikkTSpace vertex tangent calculation, in Web Assembly",
   "author": "Don McCurdy <dm@donmccurdy.com>",
   "license": "MIT",
+  "repository": "github:donmccurdy/mikktspace-wasm",
   "main": "dist/mikktspace_main.js",
   "module": "dist/mikktspace_module.js",
   "types": "mikktspace.d.ts",
