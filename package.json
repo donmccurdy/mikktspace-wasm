@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": "dist/mikktspace_main.js",
   "module": "dist/mikktspace_module.js",
+  "types": "mikktspace.d.ts",
   "sideEffects": false,
   "scripts": {
     "dist": "yarn dist:main && yarn dist:module && find dist -type f ! -name 'mikktspace*' -delete",
@@ -30,7 +31,8 @@
     "README.md",
     "LICENSE",
     "package.json",
-    "dist/"
+    "dist/",
+    "mikktspace.d.ts"
   ],
   "devDependencies": {
     "@gltf-transform/core": "^0.9.0",
