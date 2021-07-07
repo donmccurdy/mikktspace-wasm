@@ -119,21 +119,21 @@ checksum = "8452105ba047068f40ff7093dd1d9da90898e63dd61736462e9cdda6a90ad3c3"
 [[package]]
 name = "mikktspace"
 version = "0.2.0"
-dependencies = [
- "console_error_panic_hook",
- "mikktspace 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "nalgebra",
- "wasm-bindgen",
- "wee_alloc",
-]
-
-[[package]]
-name = "mikktspace"
-version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e7525a5f1b5c369e17a4b17853a57ca05726575eee26529876d0fd8963a6e1d6"
 dependencies = [
  "nalgebra",
+]
+
+[[package]]
+name = "mikktspace"
+version = "1.0.2"
+dependencies = [
+ "console_error_panic_hook",
+ "mikktspace 0.2.0",
+ "nalgebra",
+ "wasm-bindgen",
+ "wee_alloc",
 ]
 
 [[package]]

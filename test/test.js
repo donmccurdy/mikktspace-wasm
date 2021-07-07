@@ -2,7 +2,7 @@ const mikktspace = require('../');
 const tape = require('tape');
 const path = require('path');
 const { NodeIO } = require('@gltf-transform/core');
-const { unweld } = require('@gltf-transform/lib');
+const { unweld } = require('@gltf-transform/functions');
 
 tape('generateTangents', async (t) => {
     const io = new NodeIO();
