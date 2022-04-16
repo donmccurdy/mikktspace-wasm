@@ -29,6 +29,30 @@ tape('generateTangents', async (t) => {
     t.end();
 });
 
+tape('generateTangents | memory', async (t) => {
+    const io = new NodeIO();
+    const doc = await io.read(path.resolve(__dirname, './cube.glb')).transform(unweld());
+    const cube = doc.getRoot().listMeshes()[0].listPrimitives()[0];
+
+    let initialMemory = -1;
+
+    for (let i = 0; i < 1000; i++) {
+        const tangentArray = mikktspace.generateTangents(
+            cube.getAttribute('POSITION').getArray(),
+            cube.getAttribute('NORMAL').getArray(),
+            cube.getAttribute('TEXCOORD_0').getArray(),
+        );
+
+        const currentMemory = mikktspace.__wasm.memory.buffer.byteLength / 1024 / 1024;
+        if (i === 0) {
+            initialMemory = currentMemory;
+        } else if ((i % 100) === 0) {
+            t.equals(currentMemory, initialMemory, `memory = ${initialMemory} MB @ ${i}/1000`);
+        }
+    }
+    t.end();
+});
+
 tape('generateTangents | error handling', (t) => {
     const positions = new Float32Array();
     const normals = new Float32Array();
