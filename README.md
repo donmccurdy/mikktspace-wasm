@@ -76,6 +76,13 @@ input geometry must be unindexed/unwelded.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array
 
+## Contributing
+
+1. Install [Rust](https://www.rust-lang.org/tools/install) and [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
+2. Install local dependencies: `yarn install`
+3. Build: `yarn dist`
+4. Test: `yarn test`
+
 ## Credits
 
 This WebAssembly library is made possible by the [gltf-rs/mikktspace](https://github.com/gltf-rs/mikktspace)
