@@ -7,9 +7,6 @@ extern crate console_error_panic_hook;
 #[cfg(debug_assertions)]
 use std::panic;
 
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 /******************************************************************************
  * JavaScript interface.
  */
