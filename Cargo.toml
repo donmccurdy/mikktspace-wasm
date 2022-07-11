@@ -13,7 +13,7 @@ crate-type = ["cdylib"]
 [dependencies]
 wasm-bindgen = "0.2"
 mikktspace = "0.2"
-nalgebra = "0.27.1"
+nalgebra = "0.31.0"
 # Debug only.
 console_error_panic_hook = { version = "0.1" }
 
