@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@gltf-transform/core@^0.12.0":
+"@gltf-transform/core@0.12.0", "@gltf-transform/core@^0.12.0":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@gltf-transform/core/-/core-0.12.0.tgz#d34f932b56bf0ad0380736288203e24757606fb4"
   integrity sha512-qfjpo7eWAIOYhNM4orpp5n39NU7iG6mOHo+RdgZpJdY14VG+ABNJxy6op9mIegcbQqVzB0t3/ooUnfOTLRajsQ==
@@ -17,7 +17,7 @@
     "@gltf-transform/core" "^0.12.0"
     ktx-parse "^0.2.1"
 
-"@gltf-transform/functions@^0.12.0":
+"@gltf-transform/functions@0.12.0":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@gltf-transform/functions/-/functions-0.12.0.tgz#b3b624904936290f2eb82a918af6e3eb50493b78"
   integrity sha512-q/kk3SOEM5vgM+9JQJW99VSmx5GdlRmyjbdtvvPU/6bnipnKqsdQj/14gA7Qqi7qX2E27YOZXFhaP3N59lPXdA==
@@ -1167,7 +1167,7 @@ tap-out@^2.1.0:
     split "1.0.0"
     trim "0.0.1"
 
-tap-spec@^5.0.0:
+tap-spec@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/tap-spec/-/tap-spec-5.0.0.tgz#7329e4e66e8aa68da2a164215abbb903a7c5d352"
   integrity sha512-zMDVJiE5I6Y4XGjlueGXJIX2YIkbDN44broZlnypT38Hj/czfOXrszHNNJBF/DXR8n+x6gbfSx68x04kIEHdrw==
@@ -1181,7 +1181,7 @@ tap-spec@^5.0.0:
     tap-out "^2.1.0"
     through2 "^2.0.0"
 
-tape@^5.2.2:
+tape@5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/tape/-/tape-5.2.2.tgz#a98475ecf30aa0ed2a89c36439bb9438d24d2184"
   integrity sha512-grXrzPC1ly2kyTMKdqxh5GiLpb0BpNctCuecTB0psHX4Gu0nc+uxWR4xKjTh/4CfQlH4zhvTM2/EXmHXp6v/uA==
