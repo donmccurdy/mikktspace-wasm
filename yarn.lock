@@ -489,7 +489,7 @@ gl-matrix@~3.3.0:
   resolved "https://registry.yarnpkg.com/gl-matrix/-/gl-matrix-3.3.0.tgz#232eef60b1c8b30a28cbbe75b2caf6c48fd6358b"
   integrity sha512-COb7LDz+SXaHtl/h4LeaFcNdJdAQSDeVqjiIihSXNrkWObZLhDI4hIkZC11Aeqp7bcE72clzB0BnDXr2SmslRA==
 
-glob@^7.2.0:
+glob@^7.2.3:
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.3.tgz#b8df0fb802bbfa8e89bd1d938b4e16578ed44f2b"
   integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
@@ -909,7 +909,7 @@ object-assign@^4.1.0:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
-object-inspect@^1.12.0:
+object-inspect@^1.12.0, object-inspect@^1.12.2:
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.2.tgz#c0641f26394532f28ab8d796ab954e43c009a8ea"
   integrity sha512-z+cPxW0QGUp0mcqcsgQyLVRDoXFQbXOwBaqyF7VIgI4TWNQsDHrBpUQslRmIfAoYWdYzs6UlKJtB2XJpTaNSpQ==
@@ -948,6 +948,16 @@ object.assign@^4.1.2:
     call-bind "^1.0.0"
     define-properties "^1.1.3"
     has-symbols "^1.0.1"
+    object-keys "^1.1.1"
+
+object.assign@^4.1.3:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.4.tgz#9673c7c7c351ab8c4d0b516f4343ebf4dfb7799f"
+  integrity sha512-1mxKf0e58bvyjSCtKYY4sRe9itRk3PJpquJOjeIkz885CczcI4IvJJDLPS72oowuSh+pBxUFROpX+TU++hxhZQ==
+  dependencies:
+    call-bind "^1.0.2"
+    define-properties "^1.1.4"
+    has-symbols "^1.0.3"
     object-keys "^1.1.1"
 
 omggif@^1.0.5:
@@ -1211,7 +1221,7 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-string.prototype.trim@^1.2.5:
+string.prototype.trim@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/string.prototype.trim/-/string.prototype.trim-1.2.6.tgz#824960787db37a9e24711802ed0c1d1c0254f83e"
   integrity sha512-8lMR2m+U0VJTPp6JjvJTtGyc4FIGq9CdRt7O9p6T0e6K4vjU+OP+SQJpbe/SBmRcCUIvNUnjsbmY6lnMp8MhsQ==
@@ -1309,10 +1319,10 @@ tap-spec@5.0.0:
     tap-out "^2.1.0"
     through2 "^2.0.0"
 
-tape@5.5.3:
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/tape/-/tape-5.5.3.tgz#b6d6f3c99a7bade12b9dcf6ee2234b1dd35e5003"
-  integrity sha512-hPBJZBL9S7bH9vECg/KSM24slGYV589jJr4dmtiJrLD71AL66+8o4b9HdZazXZyvnilqA7eE8z5/flKiy0KsBg==
+tape@5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/tape/-/tape-5.6.0.tgz#588af7292e4a91e49ce5eba344d632d412317b9b"
+  integrity sha512-LyM4uqbiTAqDgsHTY0r1LH66yE24P3SZaz5TL3mPUds0XCTFl/0AMUBrjgBjUclvbPTFB4IalXg0wFfbTuuu/Q==
   dependencies:
     array.prototype.every "^1.1.3"
     call-bind "^1.0.2"
@@ -1321,19 +1331,19 @@ tape@5.5.3:
     dotignore "^0.1.2"
     for-each "^0.3.3"
     get-package-type "^0.1.0"
-    glob "^7.2.0"
+    glob "^7.2.3"
     has "^1.0.3"
     has-dynamic-import "^2.0.1"
     inherits "^2.0.4"
     is-regex "^1.1.4"
     minimist "^1.2.6"
-    object-inspect "^1.12.0"
+    object-inspect "^1.12.2"
     object-is "^1.1.5"
     object-keys "^1.1.1"
-    object.assign "^4.1.2"
+    object.assign "^4.1.3"
     resolve "^2.0.0-next.3"
     resumer "^0.0.0"
-    string.prototype.trim "^1.2.5"
+    string.prototype.trim "^1.2.6"
     through "^2.3.8"
 
 through2@^2.0.0:
