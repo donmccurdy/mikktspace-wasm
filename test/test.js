@@ -6,8 +6,9 @@ const { unweld } = require('@gltf-transform/functions');
 
 tape('generateTangents', async (t) => {
     const io = new NodeIO();
-    const doc = await io.read(path.resolve(__dirname, './cube.glb')).transform(unweld());
-    const cube = doc.getRoot().listMeshes()[0].listPrimitives()[0];
+    const document = await io.read(path.resolve(__dirname, './cube.glb'));
+    await document.transform(unweld());
+    const cube = document.getRoot().listMeshes()[0].listPrimitives()[0];
 
     const tangentArray = mikktspace.generateTangents(
         cube.getAttribute('POSITION').getArray(),
@@ -31,8 +32,9 @@ tape('generateTangents', async (t) => {
 
 tape('generateTangents | memory', async (t) => {
     const io = new NodeIO();
-    const doc = await io.read(path.resolve(__dirname, './cube.glb')).transform(unweld());
-    const cube = doc.getRoot().listMeshes()[0].listPrimitives()[0];
+    const document = await io.read(path.resolve(__dirname, './cube.glb'));
+    await document.transform(unweld());
+    const cube = document.getRoot().listMeshes()[0].listPrimitives()[0];
 
     let initialMemory = -1;
 
