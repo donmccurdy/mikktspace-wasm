@@ -39,6 +39,6 @@
     "@gltf-transform/core": "2.5.1",
     "@gltf-transform/functions": "2.5.1",
     "tap-spec": "5.0.0",
-    "tape": "5.6.1"
+    "tape": "5.6.3"
   }
 }
