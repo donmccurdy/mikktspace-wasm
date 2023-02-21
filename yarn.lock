@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@gltf-transform/core@2.5.1", "@gltf-transform/core@^2.5.1":
+"@gltf-transform/core@2.5.1":
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/@gltf-transform/core/-/core-2.5.1.tgz#d84ba1a02f956276ab055fc670cfb0771466e3fd"
   integrity sha512-Ah4TVzQtlUpEOJPJovgobbviec7og7NaSo9f+Lg0kJCk3Wwjl++FuDHKCDYEB+CQL8CoLpfB62+8t+NH5buedg==
@@ -10,25 +10,31 @@
     gl-matrix "~3.4.3"
     property-graph "^0.2.6"
 
-"@gltf-transform/extensions@^2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/extensions/-/extensions-2.5.1.tgz#cae4cde16cf7b6ab0548a22cde681320d6fb5570"
-  integrity sha512-fn+Mkh5XoaWYU/BUa5BvU5T1u7Bj8o2z2mDGhTKSzoGgNG2RO6tGrniESBEuDYQCtDx9HJLs0YOlziBx4zFbiw==
+"@gltf-transform/core@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/core/-/core-3.0.1.tgz#9d15c61f9f55131f63333514d91e9e9c3a0f477a"
+  integrity sha512-IGBq5T2+Bei2aVdWqTj8lYSS86FEhlGvmn70Tc/8NYGwgcuti9wPDB1jX5CtsZmTifucFM36SlisSMLflY+OnQ==
   dependencies:
-    "@gltf-transform/core" "^2.5.1"
+    property-graph "^1.0.0"
+
+"@gltf-transform/extensions@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/extensions/-/extensions-3.0.1.tgz#b663c83d6f85166387e6abb2987f70fd575fb0c8"
+  integrity sha512-ZFw9uZDOXfvUjanhr/G/UBsizPJFxRFLHcm8AU/nD32j59QCPlCQVSltD5sAKKBdGnlWXC1aMsXRk1CvCpE8eA==
+  dependencies:
+    "@gltf-transform/core" "^3.0.1"
     ktx-parse "^0.4.5"
 
-"@gltf-transform/functions@2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/functions/-/functions-2.5.1.tgz#10b82cc23cba530ef70852198218c2eca04c170a"
-  integrity sha512-A5Y2WypPo7sMmlRIAmkbS2iuI9cdujO9Nxogq6KxWJvG3I4QFCOOVWBmahWegwgXsO00ecvQQ73iuCIRJ2oC+Q==
+"@gltf-transform/functions@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/functions/-/functions-3.0.1.tgz#5ffd1fdc96f53ce4066611f51beb2c7bc691595f"
+  integrity sha512-4ptKd/CqKNnFauZSemavHX17PJZazfYuTrFsP46KOMZgfEWnWAuF9JqBwrWH0HMHImk70ubGBg5nmESg32bBOw==
   dependencies:
-    "@gltf-transform/core" "^2.5.1"
-    "@gltf-transform/extensions" "^2.5.1"
-    gl-matrix "~3.4.3"
+    "@gltf-transform/core" "^3.0.1"
+    "@gltf-transform/extensions" "^3.0.1"
     ktx-parse "^0.4.5"
     ndarray "^1.0.19"
-    ndarray-lanczos "^0.1.2"
+    ndarray-lanczos "^0.2.0"
     ndarray-pixels "^1.0.0"
 
 "@types/ndarray@^1.0.10":
@@ -920,10 +926,10 @@ minimist@^1.2.7:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.7.tgz#daa1c4d91f507390437c6a8bc01078e7000c4d18"
   integrity sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==
 
-ndarray-lanczos@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/ndarray-lanczos/-/ndarray-lanczos-0.1.2.tgz#7fc9d8d6f47bfff66610068393289b4762b0d043"
-  integrity sha512-o3dCYwaN0q4rDrhFx+1eMnyn3FIVL66xbpbKpuWb4UtGAwdgRWFc1iWyeCs8aW7fAklkJxLvqAnxDtiRB+Yf4g==
+ndarray-lanczos@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/ndarray-lanczos/-/ndarray-lanczos-0.2.0.tgz#b582420b13e3ea50ce0e04422f471c60a8aeac33"
+  integrity sha512-KkE+NPPBZ4DPXh9rAQpmI/FyEqc3y0GsznYbDWRzxR/XBtuUmWcdVLYuGh9MNjuzp/BOTyS883OsEPKtesQghA==
   dependencies:
     "@types/ndarray" "^1.0.10"
     ndarray "^1.0.19"
@@ -1102,6 +1108,11 @@ property-graph@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/property-graph/-/property-graph-0.2.6.tgz#add988a436745936d4b2ae19f747f2556296c828"
   integrity sha512-QiBHxNZlwIarbkxsqCY688aP1ANbwtoQFBYgTZopQ0Bvku6/EYp3H4KH0ygxkhWQbJv5DEONspLy1rHi5xIycg==
+
+property-graph@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/property-graph/-/property-graph-1.0.3.tgz#b10d7578856fb187987f1fd765639edb6224b556"
+  integrity sha512-LhNLXmbUfWio8R6H+KEzhnQ9EYmo7/qe7v9jmZuvkZPgIdLhRNPSP1wrfUG0hJhamT9u0bRSfIKJxSKfotQ+zQ==
 
 psl@^1.1.28:
   version "1.8.0"
