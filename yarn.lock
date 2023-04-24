@@ -2,28 +2,28 @@
 # yarn lockfile v1
 
 
-"@gltf-transform/core@3.2.0", "@gltf-transform/core@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/core/-/core-3.2.0.tgz#577ee928eabcc20f3c3e7d121008be47b9b1a1fe"
-  integrity sha512-Pi05jwG51CKi+9OCCNJaLxpeHhC7hZujNOEtynHAK0i5LDUyQEY5LxwJOgmAz9wJwa3Fxc29h9mccBN41lXKUg==
+"@gltf-transform/core@3.2.1", "@gltf-transform/core@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/core/-/core-3.2.1.tgz#47eea8bece33a6f15c9655c0a535636487471bd7"
+  integrity sha512-EE4AXJsu1jsSvcTnzk+mCu/VgLldPsb0gGhOV7onRlHM4DYh8m9aCCjGdLJf1uNJi+KUP5hPmOrUteXuopFq2A==
   dependencies:
-    property-graph "^1.1.0"
+    property-graph "^1.2.0"
 
-"@gltf-transform/extensions@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/extensions/-/extensions-3.2.0.tgz#b943c98769d3490b7285ef9bf79b77e5b5a11e92"
-  integrity sha512-wzQtxWgk7Zye/wE0l2kK5Z4yaVfp8Qxv2NhOshTb27SnMQLPMiAcERctlTTnidqOYhpeDJPk16KDx8fVV5D/lg==
+"@gltf-transform/extensions@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/extensions/-/extensions-3.2.1.tgz#fac6750abd238d3716103a36189444ddf5090260"
+  integrity sha512-7uiCXDV7/o2pnuXM9z/URdP9RR3baOaVo3f3eo65WtoUBIRKO6I/WHJzwGrRdWIWKQQWfxwZLTzYYaAgprnxDg==
   dependencies:
-    "@gltf-transform/core" "^3.2.0"
+    "@gltf-transform/core" "^3.2.1"
     ktx-parse "^0.5.0"
 
-"@gltf-transform/functions@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/functions/-/functions-3.2.0.tgz#27e4cac72c3d4043bb91c528c34d35233d48c8fb"
-  integrity sha512-ZRNcGwaDP1SN3kr+oDjvLuZIxe9Ow6NDV5x/GUlgW+xwD2Z9CO9HdQzhiRgMuWuGsroEtn1p2iZTaPcEjy1eeQ==
+"@gltf-transform/functions@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/functions/-/functions-3.2.1.tgz#c60b5a8869f363bd0a59a05c54f0554e53f8340a"
+  integrity sha512-zrwBd56XgmeMFC9E/FDYkJlN7lvYJrdmZTT0lWU92IL7YYLaigaZo8J/L1bRaE7uYu1+iWHfodk7cV357q1S8w==
   dependencies:
-    "@gltf-transform/core" "^3.2.0"
-    "@gltf-transform/extensions" "^3.2.0"
+    "@gltf-transform/core" "^3.2.1"
+    "@gltf-transform/extensions" "^3.2.1"
     ktx-parse "^0.5.0"
     ndarray "^1.0.19"
     ndarray-lanczos "^0.3.0"
@@ -1091,10 +1091,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-property-graph@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/property-graph/-/property-graph-1.1.0.tgz#4914a9dac0be48d2e9f5f14b2de2e65ab3be90fa"
-  integrity sha512-zaS0ktlJ4TDS0fnlQyFw+YgRzhhvjJISq4OjS7glBuB5FtSIpqvzrr5E2yz7QcuiEfLO/OLgDvxCpwOEV78k7Q==
+property-graph@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/property-graph/-/property-graph-1.2.0.tgz#332b59bc9e7e265879e252a9374d778ecea468ba"
+  integrity sha512-dbJCp1F/uG0G9ZhkJ0GKDoz9MOAtJHvtWVK+9UNOJewkXZVebuaPAAxh27ROJDHGLdLw+DkCGNBk9Le5DRTFJQ==
 
 psl@^1.1.28:
   version "1.8.0"
