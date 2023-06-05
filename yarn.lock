@@ -2,28 +2,28 @@
 # yarn lockfile v1
 
 
-"@gltf-transform/core@3.3.6", "@gltf-transform/core@^3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/core/-/core-3.3.6.tgz#367573d8cfcc180f24cccb7fa25f3504101b3f86"
-  integrity sha512-fMJ43m+LdPV1w/uS9RZKQci55oH8AAgQyvYBy8BqESn/UgrwWpf/Dw5BtrhvLFhIKgsP0q5boslutYSf49lXUQ==
+"@gltf-transform/core@3.4.0", "@gltf-transform/core@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/core/-/core-3.4.0.tgz#3d15f383cf3e35e0979005ac92fb4af29e99dbb1"
+  integrity sha512-5QuVILdTdXRDIn2FLO10VRQypvi7gC37ilO8w7Dnk5AusfoJlYTOXSY0KjPw/BYd476Oda2JQP/5/5+jvzLCYw==
   dependencies:
     property-graph "^1.2.0"
 
-"@gltf-transform/extensions@^3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/extensions/-/extensions-3.3.6.tgz#2858af73d42279754a5f3aecc7db6e261b15ffb3"
-  integrity sha512-cpo7iTohZGiZu1HdFgla6setEmrnZxyilEuslddI06L3d0+mCYrY88Rx4RyIj4ZwWSfohfQK9eXPOTFxMlHRCg==
+"@gltf-transform/extensions@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/extensions/-/extensions-3.4.0.tgz#49dde32df8b975b8955a9fade12dc8ee429f95f5"
+  integrity sha512-6DAExo0bEej36dUb2U/Br8xoMOIrfMfTxi0P/yoEkiWw2L9B+bsCTOk5MRpWfCDdTDAVDMFekHTeBi1GP3+XoA==
   dependencies:
-    "@gltf-transform/core" "^3.3.6"
+    "@gltf-transform/core" "^3.4.0"
     ktx-parse "^0.5.0"
 
-"@gltf-transform/functions@3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@gltf-transform/functions/-/functions-3.3.6.tgz#03f9459503d0aed1a5712c4763c4e6b2e35b21a2"
-  integrity sha512-SZtzS7FjC7iSOunqt+X2y/OyZ8NA3eXcuUf+AxkMOZqappATVZQO6vaK6jQjUA3086N0j4aCACLyrLSgWLR8MQ==
+"@gltf-transform/functions@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@gltf-transform/functions/-/functions-3.4.0.tgz#b0a09571f73a6ffa34c034f2bc9c1693de715985"
+  integrity sha512-h3q997qchpZv7PZaLsrTnFeiCffNAffbGB3ru/IJPerZIWFrbX7ohvboQLFEq1IcA6cP91d3NkvrP4PoPOdNYw==
   dependencies:
-    "@gltf-transform/core" "^3.3.6"
-    "@gltf-transform/extensions" "^3.3.6"
+    "@gltf-transform/core" "^3.4.0"
+    "@gltf-transform/extensions" "^3.4.0"
     ktx-parse "^0.5.0"
     ndarray "^1.0.19"
     ndarray-lanczos "^0.3.0"
