@@ -36,7 +36,7 @@
     "mikktspace.d.ts"
   ],
   "devDependencies": {
-    "@gltf-transform/core": "3.10.1",
+    "@gltf-transform/core": "4.0.0",
     "@gltf-transform/functions": "3.10.1",
     "tap-spec": "5.0.0",
     "tape": "5.7.5"
