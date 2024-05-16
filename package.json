@@ -37,7 +37,7 @@
   ],
   "devDependencies": {
     "@gltf-transform/core": "4.0.0",
-    "@gltf-transform/functions": "3.10.1",
+    "@gltf-transform/functions": "4.0.0",
     "tap-spec": "5.0.0",
     "tape": "5.7.5"
   }
