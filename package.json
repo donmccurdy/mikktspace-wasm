@@ -39,7 +39,7 @@
     "@gltf-transform/core": "4.0.8",
     "@gltf-transform/functions": "4.0.8",
     "tap-spec": "5.0.0",
-    "tape": "5.8.1"
+    "tape": "5.9.0"
   },
   "packageManager": "yarn@4.4.1"
 }
