@@ -14,36 +14,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gltf-transform/core@npm:4.0.8, @gltf-transform/core@npm:^4.0.8":
-  version: 4.0.8
-  resolution: "@gltf-transform/core@npm:4.0.8"
+"@gltf-transform/core@npm:4.0.10, @gltf-transform/core@npm:^4.0.10":
+  version: 4.0.10
+  resolution: "@gltf-transform/core@npm:4.0.10"
   dependencies:
     property-graph: "npm:^2.0.0"
-  checksum: 10c0/4bb834d74120117f3b16fa4ed502648886d1abb4b0547bc530c3a6199c07ee197e88fe0fd409e4279147d7a503fb6a1f3a189424793eba50f7440216fb71425a
+  checksum: 10c0/6c3f6c90e323c8d08342dc31ce83ee163cb881e7baa5253370df6b301872bb22d080dcb0e9fbd6d4b688b2b6bbfc9faf4cd65e3dd12778a0eaa32eecca0a4742
   languageName: node
   linkType: hard
 
-"@gltf-transform/extensions@npm:^4.0.8":
-  version: 4.0.8
-  resolution: "@gltf-transform/extensions@npm:4.0.8"
+"@gltf-transform/extensions@npm:^4.0.10":
+  version: 4.0.10
+  resolution: "@gltf-transform/extensions@npm:4.0.10"
   dependencies:
-    "@gltf-transform/core": "npm:^4.0.8"
-    ktx-parse: "npm:^0.7.0"
-  checksum: 10c0/7a454a30a5dc197fc5b260c2f6935a14224e94f33916e057254ffc27e0deb6ae84ad2cf137d7b9aebec0b13b7fe9ef7f69646a7142ed90909119117715563ecc
+    "@gltf-transform/core": "npm:^4.0.10"
+    ktx-parse: "npm:^0.7.1"
+  checksum: 10c0/fd5f8ed2d53f4e8fb55634624ba5f4e654e8501f0a8d11483b5f9104c08a40099539f07a3cc20e2b7e55814037e7974b54eccc382be74b132146aa7d868bc4b8
   languageName: node
   linkType: hard
 
-"@gltf-transform/functions@npm:4.0.8":
-  version: 4.0.8
-  resolution: "@gltf-transform/functions@npm:4.0.8"
+"@gltf-transform/functions@npm:4.0.10":
+  version: 4.0.10
+  resolution: "@gltf-transform/functions@npm:4.0.10"
   dependencies:
-    "@gltf-transform/core": "npm:^4.0.8"
-    "@gltf-transform/extensions": "npm:^4.0.8"
-    ktx-parse: "npm:^0.7.0"
+    "@gltf-transform/core": "npm:^4.0.10"
+    "@gltf-transform/extensions": "npm:^4.0.10"
+    ktx-parse: "npm:^0.7.1"
     ndarray: "npm:^1.0.19"
     ndarray-lanczos: "npm:^0.3.0"
     ndarray-pixels: "npm:^4.1.0"
-  checksum: 10c0/cc121e7104d6e48271619389dd27663c891521b8e9879d31c6c3c3fb3226023c64ff4e7564bd4b1499dde0d4e6f672ac3514c379fa7b23dee03d8d0003c3387b
+  checksum: 10c0/21092b51d11e60645e1347bb99f7d330c90e5cc47fe94694245367f939b6b9b5ab6458749c7bc7a56ff317f64d50ee4494c3d8659b264f1794f06b48c410637a
   languageName: node
   linkType: hard
 
@@ -1488,10 +1488,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ktx-parse@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "ktx-parse@npm:0.7.0"
-  checksum: 10c0/5953518c1c895ae05c8f12a22d46aadbd0885b6f018e82198d31085a73b6ffa351ab5d2ae740823a1eb503042a52d7e31cdb5cbf5ddbfcad819663b49f1fbf42
+"ktx-parse@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "ktx-parse@npm:0.7.1"
+  checksum: 10c0/07c0870a0d0fe0bd412b430ac58afd721136a1ca76db83a066b6d20810878822822cbe3b8c8507c15ae8680be0988675b4f5c3d1243262284f161b52c59d09e9
   languageName: node
   linkType: hard
 
@@ -1506,8 +1506,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mikktspace@workspace:."
   dependencies:
-    "@gltf-transform/core": "npm:4.0.8"
-    "@gltf-transform/functions": "npm:4.0.8"
+    "@gltf-transform/core": "npm:4.0.10"
+    "@gltf-transform/functions": "npm:4.0.10"
     tap-spec: "npm:5.0.0"
     tape: "npm:5.9.0"
   languageName: unknown
