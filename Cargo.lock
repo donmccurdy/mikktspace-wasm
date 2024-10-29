@@ -87,7 +87,7 @@ version = "1.1.0"
 dependencies = [
  "console_error_panic_hook",
  "mikktspace 0.3.0",
- "nalgebra 0.33.0",
+ "nalgebra 0.33.2",
  "wasm-bindgen",
 ]
 
@@ -108,9 +108,9 @@ dependencies = [
 
 [[package]]
 name = "nalgebra"
-version = "0.33.0"
+version = "0.33.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3c4b5f057b303842cf3262c27e465f4c303572e7f6b0648f60e16248ac3397f4"
+checksum = "26aecdf64b707efd1310e3544d709c5c0ac61c13756046aaaba41be5c4f66a3b"
 dependencies = [
  "approx 0.5.1",
  "matrixmultiply",
