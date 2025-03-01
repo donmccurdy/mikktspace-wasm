@@ -41,5 +41,5 @@
     "tap-spec": "5.0.0",
     "tape": "5.9.0"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.7.0"
 }
