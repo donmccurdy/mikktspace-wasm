@@ -6,11 +6,11 @@ __metadata:
   cacheKey: 10c0
 
 "@emnapi/runtime@npm:^1.2.0":
-  version: 1.4.1
-  resolution: "@emnapi/runtime@npm:1.4.1"
+  version: 1.4.3
+  resolution: "@emnapi/runtime@npm:1.4.3"
   dependencies:
     tslib: "npm:^2.4.0"
-  checksum: 10c0/fa5625c9e2b1aee53073f2e601ba0884cd1dcf8d9bb21fbdad1229dc51f4e14181644e8898aa27d8c41856bc2fecd0ee815b0e6de3f31718b53c5c382d1740b6
+  checksum: 10c0/3b7ab72d21cb4e034f07df80165265f85f445ef3f581d1bc87b67e5239428baa00200b68a7d5e37a0425c3a78320b541b07f76c5530f6f6f95336a6294ebf30b
   languageName: node
   linkType: hard
 
@@ -533,9 +533,9 @@ __metadata:
   linkType: hard
 
 "detect-libc@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "detect-libc@npm:2.0.3"
-  checksum: 10c0/88095bda8f90220c95f162bf92cad70bd0e424913e655c20578600e35b91edc261af27531cf160a331e185c0ced93944bc7e09939143225f56312d7fd800fdb7
+  version: 2.0.4
+  resolution: "detect-libc@npm:2.0.4"
+  checksum: 10c0/c15541f836eba4b1f521e4eecc28eefefdbc10a94d3b8cb4c507689f332cc111babb95deda66f2de050b22122113189986d5190be97d51b5a2b23b938415e67c
   languageName: node
   linkType: hard
 
