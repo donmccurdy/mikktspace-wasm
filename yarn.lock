@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gltf-transform/core@npm:4.1.3, @gltf-transform/core@npm:^4.1.3":
+"@gltf-transform/core@npm:4.1.3":
   version: 4.1.3
   resolution: "@gltf-transform/core@npm:4.1.3"
   dependencies:
@@ -23,13 +23,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gltf-transform/extensions@npm:^4.1.3":
-  version: 4.1.3
-  resolution: "@gltf-transform/extensions@npm:4.1.3"
+"@gltf-transform/core@npm:^4.1.3, @gltf-transform/core@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "@gltf-transform/core@npm:4.1.4"
   dependencies:
-    "@gltf-transform/core": "npm:^4.1.3"
+    property-graph: "npm:^3.0.0"
+  checksum: 10c0/cd3c766a311614769d91cb365b34e4233203270ff1ad2b4cdde6c7ecb54db7259316cc81b2b15daca321a2aab9ea054529c9a10784236d01f8957028738e4947
+  languageName: node
+  linkType: hard
+
+"@gltf-transform/extensions@npm:^4.1.3":
+  version: 4.1.4
+  resolution: "@gltf-transform/extensions@npm:4.1.4"
+  dependencies:
+    "@gltf-transform/core": "npm:^4.1.4"
     ktx-parse: "npm:^1.0.0"
-  checksum: 10c0/d3968143d1d245a3a631e05c91c9223f5721ca8bf5b135482b9c11afc00e776d1a34d0fc67c3b59fe9f02f8d4285fa664857d6713f841a54c23b909374602cfb
+  checksum: 10c0/82b7d1263ef3bdb36901fa1d8a348e641baffca8e2a1aab7a29eca8d8ec758fa7550de6ab87c593f8d0bdadc72c12ee80dcd92be8319f8674276880450ecb403
   languageName: node
   linkType: hard
 
@@ -569,8 +578,8 @@ __metadata:
   linkType: hard
 
 "es-abstract@npm:^1.23.5, es-abstract@npm:^1.23.9":
-  version: 1.23.10
-  resolution: "es-abstract@npm:1.23.10"
+  version: 1.24.0
+  resolution: "es-abstract@npm:1.24.0"
   dependencies:
     array-buffer-byte-length: "npm:^1.0.2"
     arraybuffer.prototype.slice: "npm:^1.0.4"
@@ -599,7 +608,9 @@ __metadata:
     is-array-buffer: "npm:^3.0.5"
     is-callable: "npm:^1.2.7"
     is-data-view: "npm:^1.0.2"
+    is-negative-zero: "npm:^2.0.3"
     is-regex: "npm:^1.2.1"
+    is-set: "npm:^2.0.3"
     is-shared-array-buffer: "npm:^1.0.4"
     is-string: "npm:^1.1.1"
     is-typed-array: "npm:^1.1.15"
@@ -614,6 +625,7 @@ __metadata:
     safe-push-apply: "npm:^1.0.0"
     safe-regex-test: "npm:^1.1.0"
     set-proto: "npm:^1.0.0"
+    stop-iteration-iterator: "npm:^1.1.0"
     string.prototype.trim: "npm:^1.2.10"
     string.prototype.trimend: "npm:^1.0.9"
     string.prototype.trimstart: "npm:^1.0.8"
@@ -623,7 +635,7 @@ __metadata:
     typed-array-length: "npm:^1.0.7"
     unbox-primitive: "npm:^1.1.0"
     which-typed-array: "npm:^1.1.19"
-  checksum: 10c0/e65c8fb973d6ba489fc1bc88730c56a592e249f49a9811c77bf88568f23696b682fe3f3485c03aaf6561042a3c7a675ae57d512861dffd8b0abde0035231c6a3
+  checksum: 10c0/b256e897be32df5d382786ce8cce29a1dd8c97efbab77a26609bd70f2ed29fbcfc7a31758cb07488d532e7ccccdfca76c1118f2afe5a424cdc05ca007867c318
   languageName: node
   linkType: hard
 
@@ -1069,6 +1081,13 @@ __metadata:
   version: 2.0.3
   resolution: "is-map@npm:2.0.3"
   checksum: 10c0/2c4d431b74e00fdda7162cd8e4b763d6f6f217edf97d4f8538b94b8702b150610e2c64961340015fe8df5b1fcee33ccd2e9b62619c4a8a3a155f8de6d6d355fc
+  languageName: node
+  linkType: hard
+
+"is-negative-zero@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "is-negative-zero@npm:2.0.3"
+  checksum: 10c0/bcdcf6b8b9714063ffcfa9929c575ac69bfdabb8f4574ff557dfc086df2836cf07e3906f5bbc4f2a5c12f8f3ba56af640c843cdfc74da8caed86c7c7d66fd08e
   languageName: node
   linkType: hard
 
@@ -1738,7 +1757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stop-iteration-iterator@npm:^1.0.0":
+"stop-iteration-iterator@npm:^1.0.0, stop-iteration-iterator@npm:^1.1.0":
   version: 1.1.0
   resolution: "stop-iteration-iterator@npm:1.1.0"
   dependencies:
