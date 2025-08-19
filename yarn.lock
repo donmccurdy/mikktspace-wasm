@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gltf-transform/core@npm:4.2.0, @gltf-transform/core@npm:^4.2.0":
+"@gltf-transform/core@npm:4.2.0":
   version: 4.2.0
   resolution: "@gltf-transform/core@npm:4.2.0"
   dependencies:
@@ -23,13 +23,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gltf-transform/extensions@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@gltf-transform/extensions@npm:4.2.0"
+"@gltf-transform/core@npm:^4.2.0, @gltf-transform/core@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@gltf-transform/core@npm:4.2.1"
   dependencies:
-    "@gltf-transform/core": "npm:^4.2.0"
-    ktx-parse: "npm:^1.0.0"
-  checksum: 10c0/28ebde33e1689d37a9939b75e9cb50bc0c3184505558f65d470051fa4758cceb7907a3b88cf438f634044bfa98d3f3707071c613ec0c8cff50dd2bbfb5953244
+    property-graph: "npm:^3.0.0"
+  checksum: 10c0/6f76545b22218a7ba771066af1a8eaf52cbbb1da01a1e159b586761ddc954006795a245927534329c915be81bcd431070a66949efe961043e23e520b1debd7fe
+  languageName: node
+  linkType: hard
+
+"@gltf-transform/extensions@npm:^4.2.0":
+  version: 4.2.1
+  resolution: "@gltf-transform/extensions@npm:4.2.1"
+  dependencies:
+    "@gltf-transform/core": "npm:^4.2.1"
+    ktx-parse: "npm:^1.0.1"
+  checksum: 10c0/286a5c82af669235282d32a8c6fbcf4354ebae23e8048d940c9c3f666b2fde00a9ae6e128a6ed0a885472f478a1a34ac41dc432a2f39190e035e2cebe80b325e
   languageName: node
   linkType: hard
 
@@ -1190,10 +1199,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ktx-parse@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "ktx-parse@npm:1.0.1"
-  checksum: 10c0/458aebe0b56bd610269df9e1d417822fef997daa211e4dc2352ab3b6a941f74a169cbfd1daecac53c1b6abf24930b9c495c3d5382d85e144c5c3e2ab6efbf47d
+"ktx-parse@npm:^1.0.0, ktx-parse@npm:^1.0.1":
+  version: 1.1.0
+  resolution: "ktx-parse@npm:1.1.0"
+  checksum: 10c0/7c57982bb53cf022a23740478966056f0055f1fb6cb0225d0c2a395156b134b046da59ac1f59c7474cd62d2e8e6d6378bcd2758bbf208ce83e65f8d022a2a2bd
   languageName: node
   linkType: hard
 
